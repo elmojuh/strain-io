@@ -4,7 +4,7 @@
 
 <hr>
 
-[![SpotIo's GitHub stats](https://github-readme-stats.vercel.app/api?username=elmojuh/strainio)](https://github.com/elmojuh/strain.io/github-readme-stats)
+[![SpotIo's GitHub stats](https://github-readme-stats.vercel.app/api?username=elmojuh)](https://github.com/elmojuh/strain.io/github-readme-stats)
 
 
 <a href="#">
