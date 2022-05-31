@@ -3,40 +3,15 @@ const mongoose = require('mongoose');
 
 const StrainSchema = new mongoose.Schema(  
                                 {  
-                                    name: {
-                                        type: String,
-                                        required: true
-                                    },
-                                    percent_of_thc: {
-                                        type: Number,
-                                        required: true
-                                    },
-                                    percentual_of_cbd: 
-                                    {
-                                        type: Number,
-                                        required: true
-                                    },
-                                    feelings: {
-                                        type: [String],
-                                        required: true
-                                    },
-                                    negativities: {
-                                        type: [String],
-                                        required: true
-                                    },
-                                    flavours: {
-                                      
-                                        type: [String],
-                                        required: true
-                                    },
-                                    dominantTerpene : {
-                                        type: String,
-                                        required: true
-                                    }
-                                },
-                                {
-                                    timestamps : true
+                                    name: String,
+                                    type : String,
+                                    percent_of_thc: Number,
+                                    percentual_of_cbd: Number,
+                                    feelings: [String],
+                                    negativities: [String],
+                                    flavours: [String],
+                                    dominantTerpene : String
                                 }
                             );
-
+var strainModel = mongoose.model('strain', StrainSchema);
 module.exports = mongoose.model("Strain", StrainSchema);

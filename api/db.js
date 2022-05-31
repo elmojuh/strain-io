@@ -9,8 +9,16 @@
 
 
 const mongoose = require('mongoose');
-connection = mongoose.connect("mongodb://localhost:27017/strainIO");
+mongoose.connect("mongodb://localhost:27017/strainIO");
+var conn = mongoose.connection;
+conn.on('connected', function() {
+    console.log('database is connected successfully');
+});
+conn.on('disconnected',function(){
+    console.log('database is disconnected successfully');
+})
+conn.on('error', console.error.bind(console, 'connection error:'));
+module.exports = conn;
 
-
-module.exports = connection;
+module.exports = conn;
 

@@ -6,7 +6,6 @@ class StrainController {
     async findAllStrains(req, res) {
         const data = await strainModel.find({});
         try {
-            res.send('We are trying');
             res.send(data);
         }
         catch (error) {
