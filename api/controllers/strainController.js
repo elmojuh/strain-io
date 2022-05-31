@@ -4,14 +4,24 @@ const strainModel = require('../models/strainModel');
 
 class StrainController {
     async findAllStrains(req, res) {
-        const data = await strainModel.find
-
-    try {
-        res.send(foods);
+        const data = await strainModel.find({});
+        try {
+            res.send('We are trying');
+            res.send(data);
+        }
+        catch (error) {
+            res.status(500).send(error);
+        }
     }
-     catch (error) {
-    res.status(500).send(error);
-  }
+
+    async addStrain(req, res) {
+        const data = await strainModel.create();
+        try {
+            res.send(data);
+        } 
+        catch (error) {
+            res.status(500).send(error);
+        }
     }
 }   
 

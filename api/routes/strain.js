@@ -5,4 +5,6 @@ const strainController = require("../controllers/strainController");
 
 router.get("/", strainController.findAllStrains );
 
+router.post("/", strainController.addStrain );
+
 module.exports = router;

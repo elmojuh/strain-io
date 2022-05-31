@@ -8,7 +8,7 @@ var db = require('./db');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var strainRouter = require('/route/strain');
+var strainRouter = require('./routes/strain');
 
 
 var app = express();

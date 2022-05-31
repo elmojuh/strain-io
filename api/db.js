@@ -1,4 +1,4 @@
-d// const { MongoClient, ServerApiVersion } = require('mongodb');
+// const { MongoClient, ServerApiVersion } = require('mongodb');
 // const uri = "mongodb+srv://admin:<password>@cluster0.vdlhj4v.mongodb.net/?retryWrites=true&w=majority";
 // const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 // client.connect(err => {
@@ -9,9 +9,8 @@ d// const { MongoClient, ServerApiVersion } = require('mongodb');
 
 
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost:27017");
+connection = mongoose.connect("mongodb://localhost:27017/strainIO");
 
 
-
-module.exports = db;
+module.exports = connection;
 

@@ -1,3 +1,4 @@
+const db = require('../db');
 const mongoose = require('mongoose');
 
 const StrainSchema = new mongoose.Schema(  
