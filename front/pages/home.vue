@@ -16,7 +16,6 @@ export default Vue.extend({
 
 <style scoped>
 .background {
-  background-color: rgb(159, 255, 164);
   padding: 40px, 40px, 40px, 40px;
 }
 </style>
