@@ -7,9 +7,9 @@
 //   client.close();
 // });
 
-
+require('dotenv/config');
 const mongoose = require('mongoose');
-mongoose.connect("MONGODB_URL");
+mongoose.connect(process.env.MONGODB_URL);
 var conn = mongoose.connection;
 conn.on('connected', function() {
     console.log('database is connected successfully');
