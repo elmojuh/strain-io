@@ -31,9 +31,9 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
 * Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Instalando <Strain.io>
 
-Para instalar o <nome_do_projeto>, siga estas etapas:
+Para instalar o <Strain.io>, siga estas etapas:
 
 Linux e macOS:
 ```
@@ -42,20 +42,24 @@ Linux e macOS:
 
 Windows:
 ```
-<comando_de_instalação>
+1- checkout para a sua pasta de projetos
+2- git clone do projeto ( ssh ou https ) 
+3- npm install ( front-end )
+4- yarn install ( back-end )
 ```
 
-## ☕ Usando <nome_do_projeto>
+## ☕ Usando Strain.io
 
-Para usar <nome_do_projeto>, siga estas etapas:
+Para usar Strain.io, siga estas etapas:
 
 ```
-<exemplo_de_uso>
+1- npm start ( front-end )
+2- yarn start ( back-end )
 ```
 
 Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
 
-## 📫 Contribuindo para <nome_do_projeto>
+## 📫 Contribuindo para Strain.io
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
 Para contribuir com <nome_do_projeto>, siga estas etapas:
 
