@@ -14,4 +14,4 @@ const StrainSchema = new mongoose.Schema(
                                 }
                             );
 var strainModel = mongoose.model('strain', StrainSchema);
-module.exports = mongoose.model("Strain", StrainSchema);
+module.exports = strainModel;
